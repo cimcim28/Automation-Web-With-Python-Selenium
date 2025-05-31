@@ -26,3 +26,9 @@ def click_element(driver, by, locator, timeout=10):
     element = wait_for_element_clickable(driver, (by, locator), timeout)
     if element:
         element.click()
+
+def is_product_in_cart(self, product_name):
+    """Check if a product with the given name exists in the cart"""
+    cart_products = self.get_cart_product_names()
+    return product_name in cart_products
+
