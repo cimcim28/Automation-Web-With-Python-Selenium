@@ -1,5 +1,3 @@
-import os
-
 import pytest
 import logging
 from selenium import webdriver
